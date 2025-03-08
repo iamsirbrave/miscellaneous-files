@@ -1,0 +1,10 @@
+toplevel (volume root directory, not mounted)
+  \-- @ (subvolume root directory, to be mounted at /) <default - using "btrfs subvolume set-default"> <compression using zstd>
+      +-- home (subvolume root directory) <compression using zstd>
+      +-- opt (subvolume root directory) <compression using zstd>
+      +-- root (subvolume root directory) <compression using zstd>
+      +-- srv (subvolume root directory) <compression using zstd>
+      +-- tmp (subvolume root directory) <compression using zstd>
+      +-- usr (directory)
+      |   \-- local (subvolume root directory) <compression using zstd>
+      +-- var (subvolume root directory) <nodatacow - using "chattr +C"> <compression using zstd>

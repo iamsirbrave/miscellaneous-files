@@ -1,0 +1,6 @@
+#!/bin/sh
+git clone https://aur.archlinux.org/paru.git
+cd paru
+sudo chgrp nobody $(pwd)
+sudo chmod g+w $(pwd)
+sudo -u nobody makepkg -si "$@"

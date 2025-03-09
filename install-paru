@@ -1,6 +1,11 @@
 #!/bin/sh
+mkdir /home/build
+cd /home/build
 git clone https://aur.archlinux.org/paru.git
+chgrp nobody /home/build
+chmod g+ws /home/build
+setfacl -m u::rwx,g::rwx /home/build
+setfacl -d --set u::rwx,g::rwx,o::- /home/build
 cd paru
-sudo chgrp nobody $(pwd)
-sudo chmod g+w $(pwd)
-sudo -u nobody makepkg -si "$@"
+sudo -u nobody makepkg -si
+cd /root

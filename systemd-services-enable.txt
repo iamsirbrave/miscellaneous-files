@@ -1,1 +1,1 @@
-systemd-{resolved,timesyncd} NetworkManager bluetooth gdm
+systemd-{networkd,resolved,timesyncd} bluetooth iwd gdm nvidia-{suspend,hibernate,resume} apparmor reflector.timer polkit udisk2 pipewire pipewire-pulse wireplumber xdg-desktop-portal

@@ -1,0 +1,1 @@
+evince gdm gnome-backgrounds gnome-calculator gnome-clocks gnome-color-manager gnome-console gnome-control-center gnome-disk-utility gnome-session gnome-shell gnome-system-monitor gnome-text-editor gnome-tweak loupe nautilus xdg-desktop-portal-gnome xdg-user-dirs-gtk 

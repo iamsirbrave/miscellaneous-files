@@ -1,1 +1,1 @@
-systemd-{networkd,resolved,timesyncd} bluetooth iwd nvidia-{suspend,hibernate,resume} apparmor reflector.timer
+systemd-{homed,networkd,resolved,timesyncd} bluetooth iwd nvidia-{suspend,hibernate,resume} apparmor reflector.timer
